@@ -1,0 +1,10 @@
+<?php
+
+{{namespace}}
+
+use Xuandat\RepositoryPattern\Repositories\RepositoryInterface;
+
+interface {{class}}RepositoryInterface extends RepositoryInterface
+{
+
+}

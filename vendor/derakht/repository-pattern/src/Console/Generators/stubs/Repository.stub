@@ -1,0 +1,16 @@
+<?php
+
+{{namespace}}
+
+use App\Repositories\Eloquent\Repository;
+use {{interface}}
+use {{model_path}}\{{class}};
+
+/** @property {{class}} $model */
+class {{class}}Repository extends Repository implements {{class}}RepositoryInterface
+{
+    protected function model()
+    {
+        return {{class}}::class;
+    }
+}
