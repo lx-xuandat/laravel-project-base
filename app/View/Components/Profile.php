@@ -40,4 +40,29 @@ class Profile extends Component
     {
         return view('components.profile');
     }
+
+    #region method component
+    /**
+     * use: getOwner('my name')
+     */
+    public function getOwner(string $name)
+    {
+        return 'This is ' . $name . "'s " . $this->fullname;
+    }
+
+    /**
+     * use: {{ $getWeight }}
+     */
+    public function getWeight()
+    {
+        switch ($this->fullname) {
+            case 'cat':
+                return 3.6;
+            case 'dog':
+                return 12;
+            default:
+                return 65;
+        }
+    }
+    #endregion
 }
