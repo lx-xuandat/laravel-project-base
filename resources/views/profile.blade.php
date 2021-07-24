@@ -1,3 +1,8 @@
+<style>
+    .bg-warning {
+        background-color: yellow
+    }
+</style>
 {{$full_name}}
 {{$count}}
 
@@ -17,6 +22,7 @@
         <x-profile
             url="http://lorempixel.com/800/400/cats/Faker/"
             :fullname="$name"
+            class="bg-warning"
         />
     </div>
 </div>
